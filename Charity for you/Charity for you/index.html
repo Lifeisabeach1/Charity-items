@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charity for you</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Charity for you</h1>
+    </header>
+    <main>
+        <section id="form-section">
+            <h2>Add an Item to Give Away</h2>
+            <form id="giveaway-form">
+                <label for="item-name">Item Name:</label>
+                <input type="text" id="item-name" name="item-name" required>
+
+                <label for="item-description">Description:</label>
+                <textarea id="item-description" name="item-description" required></textarea>
+
+                <label for="item-region">Region:</label>
+                <select id="item-region" name="item-region" required>
+                    <option value="AB">Stockholms län - Stockholm</option>
+                    <option value="C">Uppsala län - Uppsala</option>
+                    <option value="D">Södermanlands län - Nyköping</option>
+                    <option value="E">Östergötlands län - Linköping</option>
+                    <option value="F">Jönköpings län - Jönköping</option>
+                    <option value="G">Kronobergs län - Växjö</option>
+                    <option value="H">Kalmar län - Kalmar</option>
+                    <option value="I">Gotlands län - Visby</option>
+                    <option value="K">Blekinge län - Karlskrona</option>
+                    <option value="LM">Skåne län - Malmö</option>
+                    <option value="N">Hallands län - Halmstad</option>
+                    <option value="O">Västra Götalands län - Göteborg</option>
+                    <option value="S">Värmlands län - Karlstad</option>
+                    <option value="T">Örebro län - Örebro</option>
+                    <option value="U">Västmanlands län - Västerås</option>
+                    <option value="W">Dalarnas län - Falun</option>
+                    <option value="X">Gävleborgs län - Gävle</option>
+                    <option value="Y">Västernorrlands län - Härnösand</option>
+                    <option value="Z">Jämtlands län - Östersund</option>
+                    <option value="AC">Västerbottens län - Umeå</option>
+                    <option value="BD">Norrbottens län - Luleå</option>
+                </select>
+
+                <label for="item-image1">Image 1:</label>
+                <input type="file" id="item-image1" name="item-image1" accept="image/*" required>
+
+                <label for="item-image2">Image 2:</label>
+                <input type="file" id="item-image2" name="item-image2" accept="image/*" required>
+
+                <button type="submit">Add Item</button>
+            </form>
+        </section>
+
+        <section id="items-section">
+            <h2>Items to Give Away</h2>
+            <div id="items-list">
+                <!-- Items will be displayed here -->
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
